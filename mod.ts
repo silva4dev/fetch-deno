@@ -11,7 +11,7 @@ interface Launch {
 const launches = new Map<number, Launch>();
 
 async function downloadLaunchData() {
-  log.info("Downloading launch data..");
+  log.info("Downloading launch data...");
   const response = await fetch("https://api.spacexdata.com/v3/launches", {
     method: "GET",
   });
